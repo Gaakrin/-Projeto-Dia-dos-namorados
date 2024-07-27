@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(180deg, hsl(350, 75%, 75%), hsl(350, 90%, 90%), #d8d8d8, #d8d8d8, hsl(350, 90%, 90%), hsl(350, 75%, 75%)) no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+header div h1{
+    margin: 0px;
+    text-align: center;
+    font-family: Arial;
+    color: rgb(225, 0, 0);
+    font-size: 3em;
+    text-shadow: -1px 1px black, 1px -1px black, 1px 1px black, -1px -1px black;
+}
+
+main #div1, main #div2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+main div{
+    height: 280px;
+    }
+
+main p{
+    opacity: 0%;
+    display: flex;
+    font-family: Pacifico;
+    font-size: 1.3em;
+    width: 380px;
+    margin: 30px;
+    color: hsl(350, 75%, 75%);
+    text-shadow: -1px 1px black, 1px -1px black, 1px 1px black, -1px -1px black;
+}
+footer p{
+    font-family: Arial;
+    color: rgb(225, 0, 0);
+    float: right;
+    font-size: 1.5em;
+    text-shadow: -1px 1px black, 1px -1px black, 1px 1px black, -1px -1px black;
+}
+
+main .imagem{
+    position: relative;
+    top: -15em;
+    height: 15em;
+    z-index: 1;
+}
+
+@keyframes sumir{
+    0%{transform:scale(1, 1); opacity: 100%;}
+    100%{transform: scale(2, 2); opacity: 0%;}
+}
+
+@keyframes aparecer{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        overflow:visible;
+        height: 110em;
+        margin: 0;
+    }
+
+    main #div1, main #div2{
+        display: inline-block;
+    }
+
+    main #div2{
+        position: relative;
+        top: -15.5em;
+        flex-direction: column;
+    }
+
+    main{
+        height: 100em;
+        margin-bottom: -500px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p{
+        position: relative;
+        top: 17em;
+    }
+
+}
